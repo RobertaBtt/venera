@@ -18,7 +18,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Robyb Homepage</title>
+  <title><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/theme_venera.css" media="all" rel="stylesheet" type="text/css" />
