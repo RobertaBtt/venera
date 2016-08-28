@@ -1,3 +1,12 @@
+<?php /**
+ * The template for displaying all single posts and attachments
+ *
+ * @package WordPress
+ * @subpackage Venera
+ * @since Venera 1.0
+ */
+ ?>
+
 <?php if ( have_posts() ) : ?> 
     <section class='section-wrapper stripped'>
         <div class='container'>

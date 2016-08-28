@@ -1,3 +1,11 @@
+<?php /**
+ * The template for displaying all single posts and attachments
+ *
+ * @package WordPress
+ * @subpackage Venera
+ * @since Venera 1.0
+ */
+ ?>
 <section class='section-wrapper under-slider'>
               <div class='container'>
                 <div class='row'>

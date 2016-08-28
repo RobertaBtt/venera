@@ -1,9 +1,10 @@
 <?php
 /**
+ * 
  *
  * @package WordPress
  * @subpackage Venera
- * @since Venera
+ * @since Venera 1.0
  */
 
 get_header();

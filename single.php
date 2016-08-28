@@ -375,134 +375,8 @@ get_header();
                 </div>
               </div>
             </section>
-
-            <footer>
-              <div class='pre-footer'>
-                <div class='container'>
-                  <div class='row'>
-                    <div class='span4'>
-                      <div class='footer-logo'>
-                        <a>Theme<strong>Venera</strong></a>
-                      </div>
-                      <ul class='footer-address'>
-                        <li>
-                          <strong>Address:</strong>
-                          2850 Collins ave<br/>
-                          Camden, NJ 32432-1343, USA
-                        </li>
-                        <li>
-                          <strong>Phone:</strong>
-                          (324) 234-2343
-                        </li>
-                        <li>
-                          <strong>Fax:</strong>
-                          (324) 366-5423
-                        </li>
-                      </ul>
-                    </div>
-                    <div class='span4'>
-                      <h5 class='footer-header'>Recent Posts</h5>
-                      <ul class='footer-list'>
-                        <li>
-                          <a>Vestibulum auctor dapibus</a>
-                        </li>
-                        <li>
-                          <a>Aliquam tincidunt mauris</a>
-                        </li>
-                        <li>
-                          <a>Lorem ipsum dolor sit</a>
-                        </li>
-                        <li>
-                          <a>Consectetur adipisicing elit</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class='span4'>
-                      <h5 class='footer-header'>Photostream</h5>
-                      <ul class='footer-img-list thumbnails'>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                        <li class='span1'>
-                          <a class='thumbnail'>
-                            <img alt="8b9890" src="http://dummyimage.com/100x100/fff/8b9890" />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class='deep-footer'>
-                <div class='container'>
-                  <div class='row'>
-                    <div class='span6'>
-                      <div class='copyright'>Copyright &copy; 2012 Tamerlan Soziev. All rights reserved.</div>
-                    </div>
-                    <div class='span6'>
-                      <ul class='footer-links'>
-                        <li>
-                          <a>Some</a>
-                        </li>
-                        <li>
-                          <a>Footer</a>
-                        </li>
-                        <li>
-                          <a>Policy</a>
-                        </li>
-                        <li>
-                          <a>Terms Of Use</a>
-                        </li>
-                        <li>
-                          <a>Links</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
-
-          
-<!--
-get_header(); ?>-->
-
-<!--	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php
+        
+        <?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();
 
@@ -531,8 +405,16 @@ get_header(); ?>-->
 		// End the loop.
 		endwhile;
 		?>
+            
 
-		</main> .site-main 
-	</div> .content-area -->
+            <?php get_footer(); ?>
 
-<?php //get_footer(); ?>
+          
+<!--
+get_header(); ?>-->
+
+<!--	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+ 
