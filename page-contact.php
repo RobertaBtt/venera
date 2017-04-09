@@ -38,20 +38,9 @@ get_header();
                           <div class='span12'>
                             <legend>
                                 <?php _e( 'Complete the form to contact me', 'venera' ); ?></legend>
-                            <div class='controls controls-row'>
-                              <input class='search-input span6' 
-                                     placeholder='<?php _e( 'Your name', 'venera' ); ?>' type='text'>
-                              <input class='search-input span6' 
-                                     placeholder='<?php _e( 'Your email', 'venera' ); ?>' type='text'>
-                            </div>
-                            <div class='controls controls-row'>
-                              <textarea class='span12' 
-                                        placeholder='<?php _e( 'Your message', 'venera' ); ?>' rows='6'></textarea>
-                            </div>
-                            <div class='form-actions'>
-                              <button class='btn btn-small'><?php _e( 'Submit Message', 'venera' ); ?></button>
-                            </div>
-                          </div>
+                                <div class='controls controls-row'>
+                                    <?php echo do_shortcode( apply_filters("the_content", '[contact-form-7 id="94" title="Contact form 1"]' )); ?>
+                                </div>
                         </div>
                       </fieldset>
                     </form>

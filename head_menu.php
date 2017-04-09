@@ -38,7 +38,7 @@ $pagename = get_query_var('pagename');
                         </li>                        
                    
                         <li class='<?php if ($pagename == 'contact' ) echo 'active' ?>'>
-                            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contact' ) ) ); ?>">
+                            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Contact Me' ) ) ); ?>">
                                 <?php esc_html_e( 'Contact', 'textdomain' ); ?></a>
                              
                         </li>
