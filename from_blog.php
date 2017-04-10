@@ -25,8 +25,12 @@
                     </h5>
                     <div class='post-info clearfix'>
                       <div class='pull-left'>
-                        <span class='post-date'>January 15, 2011</span>
-                        <a href="<?php printf( '%s',esc_url( get_permalink() )) ?>" class="post-comments">14 Comments</a>
+                          
+                        <span class='post-date'>
+                            <?php the_date('F d, Y'); 
+                            ?>
+                        <a href="<?php printf( '%s',esc_url( get_permalink() )) ?>" class="post-comments"> 
+                            <?php comments_number( '', '1 comment', '% comment' ); ?></a>
                       </div>
                       <div class='pull-right'>
                         <a href="#" class="post-like"><i class='icon-heart'></i>
@@ -35,7 +39,8 @@
                       </div>
                     </div>
                     <img alt="Photo-card-big-1" class="post-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/test-square.png" />
-                    <p class='post-content separated'>Donec vel turpis non erat luctus ultrices vel sed massa. Quisque commodo venenatis arcu, non volutpat arcu lobortis at. Donec imperdiet nibh id metus adipiscing semper.</p>
+                    <p class='post-content separated'>
+                        <?php the_excerpt();?></p>
                     <a href="<?php printf( '%s',esc_url( get_permalink() )) ?>" class="btn btn-primary btn-extra pull-right">Read More &gt;</a>
                   </div>
                 </div>
