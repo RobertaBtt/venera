@@ -19,8 +19,7 @@
             while ( have_posts() ) : the_post(); ?>
                 <div class='span4'>
                   <div class='white-card recent-post clearfix'>
-                    <h5 class='recent-post-header'>
-                        
+                    <h5 class='recent-post-header'>                        
                       <a href="<?php printf( '%s',esc_url( get_permalink() )) ?>"><?php the_title(); ?></a>
                     </h5>
                     <div class='post-info clearfix'>

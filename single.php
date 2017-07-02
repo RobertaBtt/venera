@@ -45,7 +45,7 @@ get_header(); ?>
                           by
                           <a href="#">Michael Mayers</a>
                         </span>-->
-                        <span class='info-item'><?php echo get_the_date( 'Y-m-d' ); ?></span>
+                        <span class='info-item'><?php echo get_the_date( 'F d, Y' ); ?></span>
 <!--                        <span class='info-item'>
                           <a href="#">3 Comments</a>
                         </span>-->
@@ -61,11 +61,11 @@ get_header(); ?>
 			get_template_part( 'content', get_post_format() );
                         
                         the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
+				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'venera' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( 'Next post:', 'venera' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
+				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'venera' ) . '</span> ' .
+					'<span class="screen-reader-text">' . __( 'Previous post:', 'venera' ) . '</span> ' .
 					'<span class="post-title">%title</span>',
 			) );
 

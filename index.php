@@ -19,11 +19,12 @@ get_header(); ?>
 
     //get_template_part("last_posts");
 
-    get_template_part("from_blog");
+    //get_template_part("from_blog");
 
 
-    get_template_part("recent_post");
-
+    get_template_part("recent_post_dev");
+    get_template_part("recent_post_world");
+    get_template_part("recent_post_life");
     get_template_part("footer");
 
     ?>
