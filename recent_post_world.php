@@ -15,7 +15,7 @@
 
     <?php query_posts('posts_per_page=4'); ?>
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php if (in_category('world')): ?>
+                    <?php if (in_category('World')): ?>
                         <div class='span3'>                    
                             <div class='white-card recent-post clearfix'>                
                                 <h5 class='recent-post-header'>
@@ -41,7 +41,8 @@
                                 </div>
 
 
-                                <p>Cras metus elit, consectetur sed congue vel, sollicitudin eget odio. Cras lacinia laoreet libero et mattis.</p>
+                                <p><?php the_excerpt();?>
+                                    </p>
                                 <a href="<?php printf('%s', esc_url(get_permalink())) ?>" class="btn btn-primary btn-extra pull-right">Read More &gt;</a>
 
                             </div>

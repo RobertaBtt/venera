@@ -15,7 +15,7 @@
 
     <?php query_posts('posts_per_page=4'); ?>
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php if (in_category('dev')): ?>
+                    <?php if (in_category('Dev')): ?>
                         <div class='span3'>                    
                             <div class='white-card recent-post clearfix'>                
                                 <h5 class='recent-post-header'>
