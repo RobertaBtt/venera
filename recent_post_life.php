@@ -13,9 +13,8 @@
                     <h3 class='section-header'>Life</h3>
                 </div>
 
-    <?php query_posts('posts_per_page=4'); ?>
+    <?php query_posts( array ( 'category_name' => 'life', 'posts_per_page' => 4 ) );?>
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php if (in_category('Life')): ?>
                         <div class='span3'>                    
                             <div class='white-card recent-post clearfix'>                
                                 <h5 class='recent-post-header'>
@@ -47,8 +46,9 @@
 
                             </div>
                         </div>
-                    <?php endif; ?>
                 <?php endwhile; ?>
+                <?php // Reset Query
+                wp_reset_query(); ?>
             </div>
 
 

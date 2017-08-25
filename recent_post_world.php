@@ -12,10 +12,10 @@
                 <div class='span12'>
                     <h3 class='section-header'>World</h3>
                 </div>
-
-    <?php query_posts('posts_per_page=4'); ?>
+                
+                <?php query_posts( array ( 'category_name' => 'world', 'posts_per_page' => 4 ) );?>
+                
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php if (in_category('World')): ?>
                         <div class='span3'>                    
                             <div class='white-card recent-post clearfix'>                
                                 <h5 class='recent-post-header'>
@@ -47,8 +47,9 @@
 
                             </div>
                         </div>
-                    <?php endif; ?>
                 <?php endwhile; ?>
+                <?php // Reset Query
+                wp_reset_query(); ?>
             </div>
 
 
