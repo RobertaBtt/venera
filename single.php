@@ -93,6 +93,9 @@ get_header(); ?>
                         </form>
                       </div>
                       <div class='blog-categories widget-tp'>
+                           <?php the_category( $separator, $parents, $post_id ); ?> 
+
+
                         <h3>
                           <i class='icon-th-list'></i>
                           Post Categories

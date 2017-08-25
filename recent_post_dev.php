@@ -13,9 +13,9 @@
                     <h3 class='section-header'>Dev, IT</h3>
                 </div>
 
-    <?php query_posts('posts_per_page=4'); ?>
+                <?php query_posts( array ( 'category_name' => 'dev', 'posts_per_page' => 4 ) );?>
+
                 <?php while (have_posts()) : the_post(); ?>
-                    <?php if (in_category('Dev')): ?>
                         <div class='span3'>                    
                             <div class='white-card recent-post clearfix'>                
                                 <h5 class='recent-post-header'>
@@ -27,9 +27,7 @@
                                         <a href="<?php printf('%s', esc_url(get_permalink())) ?>" class="post-comments"></a>
                                     </div>
                                     <div class='pull-right'>
-                                        <a href="#" class="post-like"><i class='icon-heart'></i>
-                                            250
-                                        </a>
+                                        
                                     </div>
                                 </div>
 
@@ -47,8 +45,9 @@
 
                             </div>
                         </div>
-                    <?php endif; ?>
                 <?php endwhile; ?>
+                <?php // Reset Query
+                wp_reset_query(); ?>
             </div>
 
 
